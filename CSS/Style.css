@@ -228,3 +228,230 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translatey(-3px);
 }
+
+/* --- Styles additionnels pour la page Contact --- */
+
+.contact-container {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+
+/* Infos de contact */
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: var(--gris-fonce);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links-contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links-contact a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.social-links-contact a:hover {
+    opacity: 0.9;
+}
+
+/* Formulaire */
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--gtis-tree-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-claire);
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-container {
+        width: 100%;
+    }
+}
+
+/* --- Page Projets Spécifique --- */
+.projets-section {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.projets-titre {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.projet-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+}
+
+.projet-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projet-content {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.projet-content h3 {
+    font-size: 1.25rem;
+    color: var(--violet-doux);
+    margin-bottom: 0.8rem;
+}
+
+.projet-content p {
+    font-size: 0.9rem;
+    color: var(--gris-fonce);
+    margin-bottom: 1.2rem;
+    height: 45px; /* Pour aligner les textes */
+    overflow: hidden;
+}
+
+.tags {
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: #f0f0ff;
+    color: var(--violet-doux);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.projet-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.projet-links a, .projet-links span {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+
+.projet-links a:hover {
+    color: var(--violet-doux);
+}
+
+/* --- Style mis à jour pour les images de projets --- */
+.projet-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block; /* Élimine les petits espaces blancs indésirables */
+    border-bottom: 3px solid var(--violet-doux); /* Ajout de la petite ligne violette */
+}
